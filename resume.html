@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Resume | Elliot.dev</title>
+
+    <meta name="description"
+          content="Resume of Elliot Santana Torres - AI Developer, Full Stack Developer, Cybersecurity Student.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+
+        .resume-wrap{
+
+            display:grid;
+            grid-template-columns:.85fr 1.15fr;
+            gap:36px;
+            align-items:start;
+
+        }
+
+        .resume-embed{
+
+            width:100%;
+            height:80vh;
+            border:1px solid var(--border);
+            border-radius:var(--radius);
+            background:var(--card);
+
+        }
+
+        @media(max-width:950px){
+
+            .resume-wrap{
+
+                grid-template-columns:1fr;
+
+            }
+
+            .resume-embed{
+
+                height:60vh;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body class="crt">
+
+<div class="loader" id="loader">
+
+    <div class="loader-inner">
+
+        <h1 class="glow">ELLIOT<span class="text-white">.DEV</span></h1>
+
+        <p class="loader-sub">&gt; Fetching resume.pdf...</p>
+
+        <div class="boot-log" id="boot-log"></div>
+
+        <div class="loader-track">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<canvas id="matrix"></canvas>
+
+<div class="grid-overlay"></div>
+
+<div class="scanlines"></div>
+
+<div class="progress-bar"></div>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">Elliot<span>.dev</span></a>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#github">GitHub</a></li>
+        <li><a href="index.html#timeline">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+    </div>
+
+</header>
+
+<section class="about" style="padding-top:160px;">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Resume</h2>
+
+<div class="divider"></div>
+
+<p>The full write-up, in PDF and profile.json form.</p>
+
+</div>
+
+<div class="resume-wrap">
+
+    <div class="about-terminal reveal">
+
+        <div class="about-header">
+
+            <div class="window-controls">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+
+            <div class="about-title">profile.json</div>
+
+        </div>
+
+        <div class="about-body">
+
+            <p class="about-line">"name": <span class="about-value">"Elliot Santana Torres"</span></p>
+            <p class="about-line">"role": <span class="about-value">"AI Developer"</span></p>
+            <p class="about-line">"education": <span class="about-value">"Computer Science Student"</span></p>
+            <p class="about-line">"college_gpa": <span class="about-value">"3.6"</span></p>
+            <p class="about-line">"high_school_gpa": <span class="about-value">"3.2"</span></p>
+            <p class="about-line">"focus": <span class="about-value">"Artificial Intelligence, Automation, Cybersecurity"</span></p>
+            <p class="about-line">"location": <span class="about-value">"United States"</span></p>
+            <p class="about-line">"status": <span class="online">"Available for internships"</span></p>
+
+        </div>
+
+        <div style="padding:0 26px 26px;">
+
+            <a href="assets/resume.pdf" download class="btn btn-primary" style="width:100%;">
+                Download PDF
+            </a>
+
+        </div>
+
+    </div>
+
+    <iframe class="resume-embed" src="assets/resume.pdf" title="Elliot Santana Torres Resume"></iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container footer-inner">
+
+<a href="index.html" class="logo">Elliot<span>.dev</span></a>
+
+<p>&copy; 2026 Elliot Santana Torres. Built with Python-brain and JavaScript-hands.</p>
+
+<div class="footer-socials">
+    <a href="https://github.com/ShadowFox486" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/elliot-santana-torres-117781337/" target="_blank">LinkedIn</a>
+    <a href="mailto:elliotsantanatorres@gmail.com">Email</a>
+</div>
+
+</div>
+
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/loader.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

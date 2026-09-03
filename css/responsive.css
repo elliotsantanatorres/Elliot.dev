@@ -1,0 +1,185 @@
+/* ==========================================
+   Elliot.dev Portfolio
+   Responsive Rules
+   (Section-specific responsive rules live inline
+   in style.css next to their section; this file
+   covers breakpoints added after the initial build)
+========================================== */
+
+/* ---------- Tablet: 1100px ---------- */
+
+@media(max-width:1100px){
+
+    .project-card.featured{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-card.featured .project-image{
+
+        height:260px;
+
+    }
+
+    .github-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ---------- Tablet: 950px ---------- */
+
+@media(max-width:950px){
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .projects-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .project-card.featured{
+
+        grid-column:span 2;
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+/* ---------- Mobile: 700px ---------- */
+
+@media(max-width:700px){
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-card.featured{
+
+        grid-column:span 1;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    .timeline{
+
+        padding-left:28px;
+
+    }
+
+    .timeline-dot{
+
+        left:-37px;
+
+    }
+
+    .footer-inner{
+
+        gap:10px;
+
+    }
+
+    .back-to-top{
+
+        right:16px;
+        bottom:16px;
+        width:44px;
+        height:44px;
+
+    }
+
+}
+
+/* ---------- Small phones: 480px ---------- */
+
+@media(max-width:480px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+    .about-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .github-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .loader-inner h1{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/* Touch devices never get the custom cursor / cursor:none rule */
+
+@media(pointer:coarse){
+
+    body,a,button,.btn{
+
+        cursor:auto;
+
+    }
+
+    .cursor-dot,
+    .cursor-ring{
+
+        display:none;
+
+    }
+
+}

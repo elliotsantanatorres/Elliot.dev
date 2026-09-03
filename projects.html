@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Elliot.dev</title>
+
+    <meta name="description"
+          content="Projects by Elliot Santana Torres - AI, automation, and cybersecurity builds.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="crt">
+
+<div class="loader" id="loader">
+
+    <div class="loader-inner">
+
+        <h1 class="glow">ELLIOT<span class="text-white">.DEV</span></h1>
+
+        <p class="loader-sub">&gt; Loading Projects...</p>
+
+        <div class="boot-log" id="boot-log"></div>
+
+        <div class="loader-track">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<canvas id="matrix"></canvas>
+
+<div class="grid-overlay"></div>
+
+<div class="scanlines"></div>
+
+<div class="progress-bar"></div>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">Elliot<span>.dev</span></a>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="index.html#github">GitHub</a></li>
+        <li><a href="index.html#timeline">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+    </div>
+
+</header>
+
+<section class="projects" style="padding-top:160px;">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>All Projects</h2>
+
+<div class="divider"></div>
+
+<p>Everything Shadow AI's build log has on record.</p>
+
+</div>
+
+<div class="projects-grid">
+
+    <div class="project-card featured glass reveal" data-project="shadow-ai">
+
+        <div class="project-image">
+            <img src="assets/images/banner-shadow-ai.jpg" alt="Shadow AI — Local AI Desktop Assistant">
+            <span class="project-tag">New</span>
+        </div>
+
+        <div class="project-body">
+
+            <h3>Shadow AI (Beta)</h3>
+
+            <p>
+                A private, local-first desktop AI assistant capable of
+                controlling an entire computer — voice commands, automation,
+                and a local LLM backend, with no data ever leaving the machine.
+            </p>
+
+            <div class="project-stack">
+                <span>Python</span>
+                <span>Electron</span>
+                <span>Ollama</span>
+                <span>FastAPI</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/ShadowFox486/Shadow-AI" target="_blank" class="btn">View Code</a>
+                <button type="button" class="btn btn-ghost project-details-btn" data-project="shadow-ai">Details</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="project-card glass reveal" data-project="portfolio">
+        <div class="project-image">
+            <img src="assets/images/banner-portfolio.jpg" alt="Elliot.dev — Portfolio Website">
+            <span class="project-tag">New</span>
+        </div>
+        <div class="project-body">
+            <h3>This Portfolio</h3>
+            <p>The hacker-terminal themed site you're on right now — built with vanilla HTML, CSS, and JavaScript.</p>
+            <div class="project-stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+            <div class="project-links">
+                <a href="https://github.com/ShadowFox486/ShadowFox486.github.io" target="_blank" class="btn">View Code</a>
+                <button type="button" class="btn btn-ghost project-details-btn" data-project="portfolio">Details</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card glass reveal " data-project="shadow-av">
+
+        <div class="project-image">
+            <img src="assets/images/banner-shadow-av.jpg" alt="Shadow AV — Next-Generation Antivirus">
+            <span class="project-tag status-progress">New</span>
+        </div>
+
+        <div class="project-body">
+
+            <h3>Shadow AV</h3>
+
+            <p>
+                A Python antivirus application that scans files and
+                folders, reports detected threats, and can quarantine
+                or remove malware in real time.
+            </p>
+
+            <div class="project-stack">
+                <span>Python</span>
+                <span>Security</span>
+                <span>Malware Detection</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/ShadowFox486/Shadow-AV" target="_blank" class="btn">View Code</a>
+                <button type="button" class="btn btn-ghost project-details-btn" data-project="shadow-av">Details</button>
+            </div>
+
+        </div>
+    </div>
+<div class="project-card glass reveal danger" data-project="shadow-debugger">
+
+        <div class="project-image">
+            <img src="assets/images/banner-shadow-debugger.png" alt="Shadow Debugger — Multi-Platform Debugging Tool">
+            <span class="project-tag status-progress">In Progress</span>
+        </div>
+
+        <div class="project-body">
+
+            <h3>Shadow Debugger</h3>
+
+            <p>
+                A Python debugging tool that analyzes code, detects errors,
+                 and provides suggestions for optimization and improvement.
+            </p>
+
+            <div class="project-stack">
+                <span>Python</span>
+                <span>Security</span>
+                <span>Debugging</span>
+                <span>Code Analysis</span>
+            </div>
+
+            <div class="project-links">
+                <span class="coming-soon">Coming Soon</span>
+                <button type="button" class="btn btn-ghost project-details-btn" data-project="shadow-av">Details</button>
+            </div>
+
+        </div>
+
+</div>
+
+</section>
+
+<!-- ==========================================================
+     PROJECT DETAILS MODAL
+========================================================== -->
+
+<div class="modal-overlay" id="project-modal">
+
+    <div class="modal-window">
+
+        <div class="modal-header">
+
+            <div class="window-controls">
+                <span class="red" id="modal-close"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+
+            <div class="modal-file-title" id="modal-file-title">project.json</div>
+
+            <button class="modal-x" id="modal-x" aria-label="Close">&times;</button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <div class="modal-image">
+                <img id="modal-image" src="" alt="">
+            </div>
+
+            <div class="modal-info">
+
+                <span class="modal-status" id="modal-status"></span>
+
+                <h3 id="modal-title"></h3>
+
+                <p id="modal-description"></p>
+
+                <div class="project-stack" id="modal-stack"></div>
+
+                <div class="modal-meta" id="modal-role"></div>
+
+                <div class="modal-note" id="modal-note"></div>
+
+                <div class="modal-actions" id="modal-actions"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+
+<div class="container footer-inner">
+
+<a href="index.html" class="logo">Elliot<span>.dev</span></a>
+
+<p>&copy; 2026 Elliot Santana Torres. Built with Python-brain and JavaScript-hands.</p>
+
+<div class="footer-socials">
+    <a href="https://github.com/ShadowFox486" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/elliot-santana-torres-117781337/" target="_blank">LinkedIn</a>
+    <a href="mailto:elliotsantanatorres@gmail.com">Email</a>
+</div>
+
+</div>
+
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/loader.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

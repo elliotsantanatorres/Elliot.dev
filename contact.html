@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Elliot.dev</title>
+
+    <meta name="description"
+          content="Get in touch with Elliot Santana Torres.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body class="crt">
+
+<div class="loader" id="loader">
+
+    <div class="loader-inner">
+
+        <h1 class="glow">ELLIOT<span class="text-white">.DEV</span></h1>
+
+        <p class="loader-sub">&gt; Opening Channel...</p>
+
+        <div class="boot-log" id="boot-log"></div>
+
+        <div class="loader-track">
+            <div class="loader-bar" id="loader-bar"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<canvas id="matrix"></canvas>
+
+<div class="grid-overlay"></div>
+
+<div class="scanlines"></div>
+
+<div class="progress-bar"></div>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">Elliot<span>.dev</span></a>
+
+    <ul class="nav-links">
+
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="index.html#github">GitHub</a></li>
+        <li><a href="index.html#timeline">Experience</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-right">
+
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <button class="menu-toggle">☰</button>
+
+    </div>
+
+</header>
+
+<section class="contact" style="padding-top:160px;">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Contact</h2>
+
+<div class="divider"></div>
+
+<p>Open for internships and collaboration. Send a transmission.</p>
+
+</div>
+
+<div class="contact-grid">
+
+    <div class="contact-info reveal">
+
+        <div class="contact-item glass">
+            <span class="contact-label">Email</span>
+            <a href="mailto:elliotsantanatorres@gmail.com">elliotsantanatorres@gmail.com</a>
+        </div>
+
+        <div class="contact-item glass">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/ShadowFox486" target="_blank">github.com/ShadowFox486</a>
+        </div>
+
+        <div class="contact-item glass">
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/elliot-santana-torres-117781337/" target="_blank">linkedin.com/in/elliot-santana-torres</a>
+        </div>
+
+        <div class="contact-item glass">
+            <span class="contact-label">Resume</span>
+            <a href="resume.html">View Resume</a>
+        </div>
+
+        <div class="contact-item glass">
+            <span class="contact-label">Status</span>
+            <span class="online">Available for internships</span>
+        </div>
+
+    </div>
+
+    <form class="contact-form glass reveal" id="contact-form" action="https://formspree.io/f/xpqgovjl" method="POST">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="&gt; type your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+    </form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="container footer-inner">
+
+<a href="index.html" class="logo">Elliot<span>.dev</span></a>
+
+<p>&copy; 2026 Elliot Santana Torres. Built with Python-brain and JavaScript-hands.</p>
+
+<div class="footer-socials">
+    <a href="https://github.com/ShadowFox486" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/elliot-santana-torres-117781337/" target="_blank">LinkedIn</a>
+    <a href="mailto:elliotsantanatorres@gmail.com">Email</a>
+</div>
+
+</div>
+
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/loader.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

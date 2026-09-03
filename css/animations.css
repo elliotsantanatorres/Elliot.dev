@@ -1,0 +1,132 @@
+/* ==========================================
+   Elliot.dev Portfolio
+   Animations
+========================================== */
+
+/* Terminal cursor blink (typing.js / hero terminal) */
+
+.cursor{
+
+    display:inline-block;
+    width:9px;
+    height:1.1em;
+    background:var(--green);
+    margin-left:2px;
+    vertical-align:middle;
+    animation:blink 1s steps(1) infinite;
+    box-shadow:0 0 8px var(--green);
+
+}
+
+@keyframes blink{
+
+    0%,50%{ opacity:1; }
+    51%,100%{ opacity:0; }
+
+}
+
+/* Glitch shift used by effects.js on .terminal-title / .about-title */
+
+@keyframes glitchShift{
+
+    0%{ transform:translate(0,0); opacity:1; }
+    20%{ transform:translate(-2px,1px); opacity:.8; }
+    40%{ transform:translate(2px,-1px); opacity:.9; }
+    60%{ transform:translate(-1px,0); opacity:.85; }
+    80%{ transform:translate(1px,1px); opacity:1; }
+    100%{ transform:translate(0,0); opacity:1; }
+
+}
+
+/* Neon flicker target (effects.js toggles opacity, this softens it) */
+
+.neon{
+
+    transition:opacity .09s ease;
+
+}
+
+/* Loader boot-log lines fade in as they're appended */
+
+.boot-log div{
+
+    animation:fadeInLine .25s ease;
+
+}
+
+@keyframes fadeInLine{
+
+    from{ opacity:0; transform:translateX(-6px); }
+    to{ opacity:1; transform:translateX(0); }
+
+}
+
+/* Terminal live-log lines (terminal.js) */
+
+.terminal-line{
+
+    animation:fadeInLine .3s ease;
+
+}
+
+/* Status dot pulse already defined in style.css (.status-dot) —
+   reused here for the GitHub "live" indicator */
+
+.live{
+
+    color:var(--green);
+    position:relative;
+    padding-left:16px;
+
+}
+
+.live::before{
+
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--green);
+    transform:translateY(-50%);
+    box-shadow:0 0 10px var(--green);
+    animation:pulse 2s infinite;
+
+}
+
+/* Matrix canvas fade-in on load */
+
+#matrix{
+
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    opacity:0;
+    animation:matrixFadeIn 2s ease forwards;
+    animation-delay:.3s;
+
+}
+
+@keyframes matrixFadeIn{
+
+    from{ opacity:0; }
+    to{ opacity:.35; }
+
+}
+
+/* Respect reduced motion preference */
+
+@media(prefers-reduced-motion:reduce){
+
+    *{
+
+        animation-duration:.001ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.001ms !important;
+        scroll-behavior:auto !important;
+
+    }
+
+}
